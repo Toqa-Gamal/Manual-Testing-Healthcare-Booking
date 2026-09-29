@@ -1,0 +1,1140 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Labels,Description,Environment,Watchers,Watchers,Watchers Id,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Problem/Incident),Outward issue link (Problem/Incident),Inward issue link (Relates),Inward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Attachment,Attachment,Attachment,Attachment,Custom field (Actual),Custom field (Actual Result),Custom field (Actual Result),Custom field (Actual Result),Custom field (Actual Result),Custom field (Actual result),Custom field (Actual result ),Custom field (Attachment link),Custom field (Development),Custom field (ENV),Custom field (Expected),Custom field (Expected Result),Custom field (Expected Result),Custom field (Expected Result),Custom field (Expected Result),Custom field (Expected Result),Custom field (Expected Result ),Custom field (Expected result),Custom field (Expected result),Custom field (Issue color),Custom field (Pre conditions),Custom field (Pre-condition),Custom field (Precondition),Custom field (Priority),Custom field (Priority),Custom field (Priority),Custom field (Priority),Custom field (Priority),Custom field (Priority),Custom field (Priority ),Custom field (Rank),Custom field (Severity),Custom field (Severity),Custom field (Severity),Custom field (Severity),Custom field (Severity),Custom field (Severity),Custom field (Severity),Sprint,Custom field (Start date),Custom field (State),Custom field (State),Custom field (State),Custom field (State),Custom field (State),Custom field (State),Custom field (Status),Custom field (Status),Custom field (Status),Custom field (Status),Custom field (Status),Custom field (Status),Custom field (Status ),Custom field (Steps),Custom field (Steps),Custom field (Steps),Custom field (Steps),Custom field (Steps),Custom field (Steps),Custom field (Steps),Custom field (Steps),Custom field (Steps ),Custom field (Story point estimate),Custom field (Team),Custom field (Test Data),Custom field (Vulnerability),Custom field (Vulnerability),Custom field (pre coditions),Custom field (pre coditions),Custom field (pre condition),Custom field (precondition),Comment,Comment,Status Category,Status Category Changed
+REQ-FUN-01 Patient Registration,HL-1,10659,Story,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,06/Sep/26 10:46 PM,06/Sep/26 11:47 PM,,,,0,Registeration,"*User Story:*
+
+ As a new patient, I want to create an account using my personal details so that I can log in and book appointments.
+
+ *Functional Specifications:* 
+
+* Input Fields: Full Name, Phone Number, Email Address, Date of Birth, Gender, Password, Confirm Password. 
+
+* Full Name: Alphabetic characters and spaces only. Min 3, Max 50 chars. 
+
+* Email Address: Standard RFC 5322 format ([user@domain.com|mailto:user@domain.com]). Must be unique. 
+
+* Phone Number: Exactly 11 digits starting with Egyptian carrier prefixes (010, 011, 012, 015). Must be unique. 
+
+* Date of Birth: Past date only. Age must be ≥ 18 years relative to system date.
+
+* Password: Min 8, Max 20 chars; ≥ 1 uppercase, ≥ 1 lowercase, ≥ 1 digit, and ≥ 1 special character (!@#$%^&*).
+
+* Confirm Password: Must match Password field exactly. 
+
+*Validation / Exception Handling:* 
+
+* Invalid inputs trigger immediate inline errors and block form submission.",,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,,,HL-8,HL-7,HL-9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cf:,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,5.0,,,,,,,,,,,To Do,06/Sep/26 10:46 PM
+Test case design 01,HL-7,10670,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,06/Sep/26 11:20 PM,09/Sep/26 3:43 AM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-1,,HL-49,HL-50,HL-51,HL-52,HL-53,HL-54,HL-55,HL-56,HL-57,HL-58,HL-59,HL-60,HL-61,HL-62,HL-63,HL-64,HL-65,HL-66,HL-67,HL-68,HL-69,HL-72,HL-71,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001ch:,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,06/Sep/26 11:20 PM
+"Verify that full name field accepts alphabetic characters and spaces only and Min 3, Max 50 chars. ",HL-49,11142,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,08/Sep/26 11:52 PM,11/Sep/26 4:05 PM,,,,0,,a happy scenario,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,HL-70,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"full name field accepts alphabetic characters and spaces only and Min 3, Max 50 chars without any errors and user registers successfully.",,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:i,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types a valid full name (alphabetic characters and spaces only and Min 3, Max 50 chars.) 
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,08/Sep/26 11:52 PM
+Verify that full name field rejects less than 3 chars.,HL-51,11144,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 12:35 AM,11/Sep/26 4:35 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid full name trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:m,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the name field name less than 3 chars.
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 12:35 AM
+Verify that full name field rejects more than 5 chars.,HL-52,11145,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 12:36 AM,11/Sep/26 4:37 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid full name trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:o,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the name field name more than 5 chars.
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 12:36 AM
+Verify that full name field rejects numbers and special characters,HL-53,11146,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 12:45 AM,11/Sep/26 4:38 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid full name trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:p,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the name field a name with numbers and special characters
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 12:45 AM
+Verify that Email Address field only accepts Standard RFC 5322 format (user@domain.com) and it Must be unique.,HL-50,11143,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 12:12 AM,11/Sep/26 4:06 PM,,,,0,,happy scenario,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Email Address field accepts the valid Email Address without any errors and user registers successfully.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:r,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- Type a valid Email Address (Standard RFC 5322 format ([user@domain.com|mailto:user@domain.com]))
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 12:12 AM
+Verify that Email Address field rejects invalid Emails,HL-54,11147,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 12:54 AM,11/Sep/26 8:10 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,HL-145,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Email  Address trigger immediate inline errors and block form submission.,,,,,,,,,,, User is at the Registeration page,,,,,,,Design,,0|i001ch:v,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"1- User is at the Registeration page
+
+2- Type an invalid Email Address
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,"* All types of possible invalid email
+* *Missing At-Sign*: {{userdomain.com}} lacks the required {{@}} symbol separating the local part and the domain.
+* *Multiple At-Signs*: {{user@@domain.com}} or {{user@sub@domain.com}} contains more than one unquoted {{@}} symbol.
+* *Consecutive Dots*: {{user..name@domain.com}} or {{user@domain..com}} uses repeating dots, which violate standard specifications.
+* *Leading or Trailing Dots*: {{.user@domain.com}} or {{user.@domain.com}} starts or ends the local part with a dot outside of quoted strings.
+* *Spaces in Wrong Places*: {{user @domain.com}} or {{user@ domain.com}} includes illegal unquoted whitespace within the address structure.
+* *Missing Parts*: {{@domain.com}} (missing local part) or {{user@}} (missing domain part).
+* *Exceeded Length Limits*: Local parts longer than 64 characters or total lengths exceeding 320 characters. ",,,,,,,,,To Do,11/Sep/26 8:10 PM
+Email Address field accepts invalid Emails,HL-145,11827,Bug,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,11/Sep/26 4:43 PM,11/Sep/26 8:10 PM,,,,0,,"h4. Consecutive Dots: [user..name@domain.com|mailto:user..name@domain.com] or user@domain..com uses repeating dots, which violate standard specifications.
+
+* *Leading or Trailing Dots*: {{.user@domain.com}} or {{user.@domain.com}} starts or ends the local part with a dot outside of quoted strings.
+
+
+
+* *Exceeded Length Limits*: Local parts longer than 64 characters or total lengths exceeding 320 characters. 
+
+: user@domain.com0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,HL-54,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 5:18 PM;ug:0b5f12aa-5b20-49c1-bf21-604669f125e5;double dots email_REC.mp4;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10794,,,,User registers successfully without any errors.,,,,,,,,,,Invalid Email  Address trigger immediate inline errors and block form submission.,,,,,,,,,,,,,,,,,High,,,0|i001ch:w,,,,,,,High,HL Sprint 1,,,,,,,,,,,,,,,"1- User is at the Registeration page
+
+2- Type an invalid Email Address
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 8:10 PM
+Verify that Email Address field rejects Non-unique Email Addresses,HL-55,11148,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 1:06 AM,11/Sep/26 5:33 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Email  Address trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:x,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- Type an Non-unique Email Addresses
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 1:06 AM
+"Verify that Phone Number field accepts Exactly 11 digits starting with Egyptian carrier prefixes (010, 011, 012, 015) and Must be unique.",HL-56,11151,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 1:36 AM,11/Sep/26 4:06 PM,,,,0,,a happy scenario,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Phone Number field accepts the valid Phone Number without any errors and user registers successfully.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:y,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types a valid Phone Number field Exactly 11 digits starting with Egyptian carrier prefixes (010, 011, 012, 015) and Must be unique.
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 1:36 AM
+Verify that Phone Number field rejects Phone Numbers less than 11 numbers,HL-57,11152,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 1:53 AM,11/Sep/26 5:34 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Phone Number trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:z,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Phone Number field a Phone Numbers less than 11 numbers
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 1:53 AM
+Verify that Phone Number field rejects Phone Numbers more than 11 numbers,HL-58,11153,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 1:54 AM,11/Sep/26 5:36 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Phone Number trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:zi,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Phone Number field a Phone Numbers more than 11 numbers
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 1:54 AM
+"Verify that Phone Number field rejects Phone Numbers without Egyptian carrier prefixes (010, 011, 012, 015)",HL-59,11154,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 2:04 AM,11/Sep/26 8:10 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,HL-148,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Phone Number trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:zr,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Phone Number field a Phone Numbers without Egyptian carrier prefixes (010, 011, 012, 015)
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 8:10 PM
+Phone Number field accepts Phone Numbers with Non-Egyptian carrier prefixes (013) and it is required in the invalid message,HL-148,11850,Bug,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,11/Sep/26 7:01 PM,11/Sep/26 7:53 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,HL-59,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 7:53 PM;ug:0b5f12aa-5b20-49c1-bf21-604669f125e5;phoneno_REC.mp4;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10822,,,,Phone Number field accepts Phone Numbers with Non-Egyptian carrier prefixes (013) and user registered successfully without any errors,,,,,,,,,,Invalid Phone Number trigger immediate inline errors and block form submission.,,,,,,,,,,,,,,,,,High,,,0|i001ch:zt,,,,,,,High,HL Sprint 1,,,,,,,,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Phone Number field a Phone Numbers s with Non-Egyptian carrier prefixes (013)
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 7:01 PM
+Verify that Phone Number field rejects Non-unique Phone Numbers,HL-60,11156,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 2:08 AM,11/Sep/26 5:36 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Phone Number trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:zv,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Phone Number field a Non-unique Phone Numbers
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 2:08 AM
+Verify that Date of Birth field  accepts Past date only and Age must be ≥ 18 years relative to system date.,HL-61,11159,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 2:19 AM,11/Sep/26 4:06 PM,,,,0,,a happy scenario,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Date of Birth field accepts the valid Birth date without any errors and user registers successfully.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:zx,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types a valid Birth date that accepts Past date only and Age must be ≥ 18 years relative to system date.
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 2:19 AM
+Verify that Date of Birth field rejects new dates,HL-62,11161,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 2:29 AM,11/Sep/26 6:14 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid  Date of Birth trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:zy,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Date of Birth field new dates
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 2:29 AM
+Verify that Date of Birth field rejects Age less than 18 years relative to system date.,HL-63,11163,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 2:36 AM,11/Sep/26 8:10 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,HL-149,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid  Date of Birth trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:zz,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Date of Birth field Age less than 18 years relative to system date.
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 8:10 PM
+Date of Birth field rejects Age less than 17 years not 18 years relative to system date.and it is required in the invalid message,HL-149,11851,Bug,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,11/Sep/26 7:05 PM,11/Sep/26 8:10 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,HL-63,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 8:06 PM;ug:0b5f12aa-5b20-49c1-bf21-604669f125e5;BD_REC.mp4;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10823,,,,User registers successfully without any errors,,,,,,,,,,Invalid  Date of Birth trigger immediate inline errors and block form submission.,,,,,,,,,,,,,,,,,High,,,0|i001ch:zz9,,,,,,,High,HL Sprint 1,,,,,,,,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Date of Birth field Age less than 18 years relative to system date.
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 7:05 PM
+"Verify that Password  field accepts only Valid Password ( Min 8, Max 20 chars; ≥ 1 uppercase, ≥ 1 lowercase, ≥ 1 digit, and ≥ 1 special character (!@#$%^&*)).",HL-64,11165,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 2:46 AM,11/Sep/26 4:07 PM,,,,0,,a happy scenario,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Password field accepts Valid Password and user registers successfully.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:zzi,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types a Valid Password ( Min 8, Max 20 chars; ≥ 1 uppercase, ≥ 1 lowercase, ≥ 1 digit, and ≥ 1 special character (!@#$%^&*)).
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 2:46 AM
+Verify that Password field rejects invalid Password less than 8 chars,HL-65,11166,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 2:54 AM,11/Sep/26 6:19 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Password trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:zzr,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Password field an invalid Password less than 8 chars
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 2:54 AM
+Verify that Password field rejects invalid Password more than 20 chars,HL-66,11169,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 3:10 AM,11/Sep/26 6:21 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Password trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:zzv,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Password field an invalid Password more than 20 chars
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 3:10 AM
+Verify that Password field rejects invalid Password with no uppercase char,HL-67,11171,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 3:15 AM,11/Sep/26 6:30 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Password trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:zzx,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Password field an invalid Password with no uppercase char
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 3:15 AM
+Verify that Password field rejects invalid Password with no lowercase char,HL-68,11172,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 3:15 AM,11/Sep/26 6:52 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Password trigger immediate inline errors and block form submission.,,,,,,,,,,, User is at the Registeration page,,,,,,,Design,,0|i001ch:zzy,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Password field an invalid Password with no lowercase char
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )
+
+h2. ",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 6:52 PM
+Verify that Password field rejects invalid Password with no special character (!@#$%^&*).,HL-69,11173,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 3:16 AM,11/Sep/26 6:52 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Password trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:zzy9,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Password field an invalid Passwordwith no special character (!@#$%^&*).
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )
+
+h2. ",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 6:52 PM
+Verify that Password field rejects invalid Password with no digits,HL-70,11177,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 3:26 AM,11/Sep/26 6:52 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-49,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Password trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:zzyi,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Password field an invalid Passwordwith no digits.
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 6:52 PM
+Verify that Confirm Password  field only accepts the exact match  of Password field .,HL-71,11180,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 3:32 AM,11/Sep/26 4:07 PM,,,,0,,a happy scenario,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Confirm Password field  accepts the exact match of Password field  without any errors and user registers successfully.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:zzzi,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at the Registeration page
+
+2- User types the exact match of Password field .
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 3:32 AM
+Verify that Confirm Password  field rejects any Password that do not match the Password field exactly.,HL-72,11183,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 3:36 AM,09/Sep/26 3:42 AM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid  Confirm Password trigger immediate inline errors and block form submission.,,,,,,,,,,,User is at the Registeration page,,,,,,,Design,,0|i001ch:zzzr,,,,,,,,HL Sprint 1,,,,,,,Active,,,,,,,,"1- User is at the Registeration page
+
+2- User types in the Confirm Password fieldany Password that do not match the Password field exactly.
+
+3- Fill the rest fields with valid data
+
+4- Press ( Register / Sign Up )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 3:36 AM
+Test Case peer review 01,HL-8,10671,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,06/Sep/26 11:24 PM,06/Sep/26 11:40 PM,,,,0,Authentication,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001ci:,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,06/Sep/26 11:24 PM
+Test Case Excution 01,HL-9,10672,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,06/Sep/26 11:29 PM,06/Sep/26 11:47 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cj:,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,06/Sep/26 11:29 PM
+REQ-FUN-02 Patient Authentication,HL-4,10667,Story,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,06/Sep/26 11:15 PM,07/Sep/26 7:40 PM,,,,0,Authentication,"*User Story:*
+
+ As a registered patient, I want to log in using my credentials so that I can access my profile and book appointments.
+
+ *Functional Specifications:*
+
+ • Input Fields: Email Address or Phone Number, Password. Both are mandatory.
+
+ • Invalid Credentials: Display generic message: “Invalid email/phone or password.” 
+
+• Brute-Force Protection: 3 consecutive failed login attempts lock the account for 15 minutes. 
+
+*Validation / Exception Handling:* 
+
+• When locked, display: “Account locked due to multiple failed attempts. Please try again in 15 minutes.” ",,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,,,HL-10,HL-11,HL-12,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cl:,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,3.0,,,,,,,,,,,To Do,06/Sep/26 11:15 PM
+Test Case design 02,HL-10,10673,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,06/Sep/26 11:42 PM,11/Sep/26 8:00 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-4,,HL-73,HL-74,HL-75,HL-76,HL-77,HL-78,HL-79,HL-80,HL-81,HL-82,HL-83,HL-84,HL-142,HL-150,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cm:,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,06/Sep/26 11:42 PM
+Verify that Email Address field accepts valid Email Address that it was previously signed up with,HL-73,11193,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 3:57 AM,11/Sep/26 4:19 PM,,,,0,,a happy scenario,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Email Address field accepts valid Email Address and user log in successfully.,,,,,,,,,,,User is at the Log-in page,,,,,,,Design,,0|i001cm:9,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1-User is at the Log-in page
+
+2- User types a valid Email Address that they previously signed up with 
+
+3- Fill the rest fields with valid data
+
+4- Press ( Submit / Log in )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 3:57 AM
+Verify that user can not sign in without creating an account first,HL-142,11818,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,11/Sep/26 3:56 PM,11/Sep/26 4:02 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Credentials: Display generic message: “Invalid email/phone or password.”,,,,,,,,,,,User at Log in / Sign in page,,,,,,,,,0|i001cm:b,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User at Log in / Sign in page
+
+2- Fill the fields with valid data without creating an account
+
+3- Press sign in / log in
+
+ 
+
+ ",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 3:56 PM
+Verify that Email Address field rejects invalid Email Address and  non signed up with previously,HL-74,11197,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 4:03 AM,11/Sep/26 7:26 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Credentials: Display generic message: “Invalid email/phone or password.”,,,,,,,,,,,User is at the Log-in page,,,,,,,Design,,0|i001cm:d,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at Log in page
+
+2- +User+ types an invalid Email Address and non signed up with previously
+
+3- Fill the rest fields with valid data
+
+4- Press ( Submit / Log in )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 4:03 AM
+Verify that user can log in successfully by writing phone number and leaving Email Address field empty,HL-75,11202,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 4:15 AM,11/Sep/26 8:09 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,user log in successfully without any errors. ,,,,,,,,,,,User is at Log in page,,,,,,,Design,,0|i001cm:f,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at Log in page
+
+2- +User+ types a valid phone number and leaves Email Address field empty
+
+3- Fill the rest fields with valid data
+
+4- Press ( Submit / Log in )",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 8:09 PM
+Verify that Phone number field accepts valid Phone number that it was previously signed up with,HL-79,11210,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 5:12 AM,11/Sep/26 4:20 PM,,,,0,,a happy scenario,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Phone number field accepts valid Phone numberand user log in successfully.,,,,,,,,,,,User is at the Log-in page,,,,,,,Design,,0|i001cm:fi,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1-User is at the Log-in page
+
+2- User types a validPhone number that it was previously signed up with
+
+3- Fill the rest fields with valid data
+
+4- Press ( Submit / Log in )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 5:12 AM
+Verify that Phone number field rejects invalid Phone number and non signed up with previously,HL-80,11211,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 5:13 AM,11/Sep/26 7:31 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Credentials: Display generic message: “Invalid email/phone or password.”,,,,,,,,,,,User is at Log in page,,,,,,,Design,,0|i001cm:fr,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at Log in page
+
+2- +User+ types an invalid Phone number and non signed up with previously
+
+3- Fill the rest fields with valid data
+
+4- Press ( Submit / Log in )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 5:13 AM
+Verify that user can log in successfully by writing Email Address and leaving Phone number  field empty,HL-81,11212,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 5:15 AM,11/Sep/26 7:31 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,user log in successfully without any errors.,,,,,,,,,,,User is at Log in page,,,,,,,Design,,0|i001cm:fv,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at Log in page
+
+2- +User+ types a valid Email Address and leaves phone number  field empty
+
+3- Fill the rest fields with valid data
+
+4- Press ( Submit / Log in )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 5:15 AM
+Verify that user can not log in by leaving  Email Address and Phone number fields empty,HL-82,11213,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 5:27 AM,11/Sep/26 7:33 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Credentials: Display generic message: “Invalid email/phone or password.”,,,,,,,,,,,User is at Log in page,,,,,,,Design,,0|i001cm:fx,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at Log in page
+
+2- +User+ leaves Email Address and Phone number fields empty
+
+3- Fill the rest fields with valid data
+
+4- Press ( Submit / Log in )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 5:27 AM
+Verify that Password field accepts valid Password  that it was previously signed up with,HL-76,11207,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 4:27 AM,11/Sep/26 4:20 PM,,,,0,,a happy scenario,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Password field accepts valid Password and user log in successfully.,,,,,,,,,,,User is at the Log-in page,,,,,,,Design,,0|i001cm:g,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1-User is at the Log-in page
+
+2- User types a valid password that they previously signed up with
+
+3- Fill the rest fields with valid data
+
+4- Press ( Submit / Log in )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 4:27 AM
+Verify that Password  field rejects invalid Password and non signed up with previously,HL-77,11208,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 4:58 AM,11/Sep/26 7:35 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Credentials: Display generic message: “Invalid email/phone or password.”,,,,,,,,,,,User is at Log in page,,,,,,,Design,,0|i001cm:h,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at Log in page
+
+2- +User+ types an invalid Password and non signed up with previously
+
+3- Fill the rest fields with valid data
+
+4- Press ( Submit / Log in )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 4:58 AM
+Verify that user can not log in by writing phone number or Email Address  and leaving Password field empty,HL-78,11209,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 5:04 AM,11/Sep/26 7:36 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Invalid Credentials: Display generic message: “Invalid email/phone or password.”,,,,,,,,,,,User is at Log in page,,,,,,,Design,,0|i001cm:hi,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1- User is at Log in page
+
+2- +User+ types a valid phone number or Email Address and leaving Password field empty
+
+3- Press ( Submit / Log in )",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 5:04 AM
+Verify that after 3 consecutive failed login attempts lock the account for 15 minutes.,HL-83,11214,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 5:36 AM,11/Sep/26 7:36 PM,,,,0,,a happy scenario,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"When locked, display: “Account locked due to multiple failed attempts. Please try again in 15 minutes.”",,,,,,,,,,,User is at the Log-in page,,,,,,,Design,,0|i001cm:hr,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1-User is at the Log-in page
+
+2- User types invalid data 
+
+3- Press ( Submit / Log in )
+
+4- Repeat the previous steps 3 consecutive attempts",,,,,,,,,,,,,,,,,,,,To Do,09/Sep/26 5:36 AM
+Verify that after 15 minutes user can  sign in successfully with valid data and their account is not locked anymore,HL-150,11859,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,11/Sep/26 7:56 PM,11/Sep/26 8:00 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,User can sign in again successfully,,,,,,,,,,,User is at the Log-in page,,,,,,,,,0|i001cm:ht,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1-User is at the Log-in page
+
+2- User types invalid data
+
+3- Press ( Submit / Log in )
+
+4- Repeat the previous steps 3 consecutive attempts 
+
+5- User can not log in for 15 mins
+
+6- User tries to log in again with valid data after15 mins",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 7:56 PM
+Verify that whithin the 15 mins the acount is still locked,HL-84,11215,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,09/Sep/26 5:44 AM,11/Sep/26 7:51 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"When locked, display: “Account locked due to multiple failed attempts. Please try again in 15 minutes.”",,,,,,,,,,,User is at the Log-in page,,,,,,,Design,,0|i001cm:hv,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,1-User is at the Log-in page,,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 7:51 PM
+Test Case peer review 02,HL-11,10674,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,06/Sep/26 11:43 PM,06/Sep/26 11:46 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cm:i,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,06/Sep/26 11:43 PM
+Test Case Execution 02,HL-12,10675,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,06/Sep/26 11:44 PM,07/Sep/26 7:49 PM,,,,0,,,,Nada Ahmed,,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,,,,,,,,,,,,HL-4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cm:r,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,06/Sep/26 11:44 PM
+REQ-FUN-03 Doctor Search & Filtering,HL-13,10676,Story,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,07/Sep/26 12:56 AM,07/Sep/26 1:11 AM,,,,0,,"*User Story:*
+As a logged-in patient, I want to search and filter doctors by specialty, area, and price range so that I can find a suitable doctor
+
+
+
+*Functional Specifications:*
+• Search Bar: Text input up to 100 characters. Dynamically filters by Doctor Name or Specialty.
+• Specialty: Cardiology, Dermatology, Pediatrics, Dentistry.
+• City/Area: Cairo - Nasr City, Cairo - Maadi, Giza - Dokki.
+• Price Range: Numeric min/max inputs. Allowed range: 50 EGP to 2000 EGP.
+• Price Validation: Reject queries where Min Price > Max Price.
+
+
+
+*Validation / Exception Handling:*
+• If no results match, display: ""No doctors found matching your criteria.""",,Ritaj Ayman,,712020:88156e42-7564-4f49-85cb-c14523094766,,,,,,,,,,,,,,HL-14,HL-15,HL-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cm:v,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,5.0,,,,,,,,,,,To Do,07/Sep/26 12:56 AM
+Test Case design 03,HL-14,10677,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,07/Sep/26 1:07 AM,08/Sep/26 3:14 AM,,,,0,,,,Ritaj Ayman,,712020:88156e42-7564-4f49-85cb-c14523094766,,,,,,,,,,,,HL-13,,HL-38,HL-39,HL-40,HL-41,HL-42,HL-43,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cm:x,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,07/Sep/26 1:07 AM
+TC-03-01: Verify search by doctor name,HL-38,10888,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,08/Sep/26 3:08 AM,11/Sep/26 6:23 PM,,,,0,,Positive scenario ,,Ritaj Ayman,Toqa Gamal,712020:88156e42-7564-4f49-85cb-c14523094766,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-14,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 6:23 PM;ug:2206b2ea-d3ef-4926-a070-0233c8477acb;Screenshot (242).png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10801,11/Sep/26 6:23 PM;ug:2206b2ea-d3ef-4926-a070-0233c8477acb;Screenshot (243).png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10800,,,,,,,,,,,,,*Expected Result:* Only doctors matching the entered name are displayed in real-time.,,,,,,,,,,,"
+
+* *Pre-conditions:* Patient is logged in and navigated to Doctor Search page.
+* ",,,,,,,Review,,0|i001cm:xi,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"
+
+* *Test Steps:*
+*# Click on the search bar input.
+*# Type valid doctor name.
+*# Observe dynamic filtering results.
+* ",,,,,,,,,,,,,,,,,,"09/Sep/26 11:52 PM;712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae;[~accountid:712020:88156e42-7564-4f49-85cb-c14523094766]   
+
+Please write in the test data which doctor’s name you searched, and  in the steps, could you please define what the valid doctor name is and apply the BVA technique (up to 100 characters) and separate it in more than one test case",,To Do,08/Sep/26 3:08 AM
+TC-03-02: Verify filter by specialty,HL-39,10890,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,08/Sep/26 3:11 AM,11/Sep/26 6:27 PM,,,,0,,positive scenario,,Ritaj Ayman,Toqa Gamal,712020:88156e42-7564-4f49-85cb-c14523094766,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-14,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 6:27 PM;ug:2206b2ea-d3ef-4926-a070-0233c8477acb;Screenshot (244).png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10804,,,,,,,,,,,,,,*Expected Result:* Grid updates to show only doctors whose specialty is Cardiology.,,,,,,,,,,,*Pre-conditions:* Patient is on Doctor Search page.,,,,,,,Design,,0|i001cm:xr,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"*Test Steps:*
+
+# Open the Specialty dropdown.
+# Select ""Cardiology"".",,,,,,,,,,,"*Test Data:* Specialty = ""Cardiology"" (or Dermatology, Pediatrics, Dentistry).",,,,,,,09/Sep/26 11:59 PM;712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae;[~accountid:712020:88156e42-7564-4f49-85cb-c14523094766]  could you try all choices separately and provide the expected result for each choice separately in separate test cases to avoid conflict,,To Do,08/Sep/26 3:11 AM
+TC-03-03: Verify filter by area,HL-40,10891,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,08/Sep/26 3:12 AM,11/Sep/26 6:28 PM,,,,0,,positive scenario,,Ritaj Ayman,Toqa Gamal,712020:88156e42-7564-4f49-85cb-c14523094766,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-14,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 6:28 PM;ug:2206b2ea-d3ef-4926-a070-0233c8477acb;Screenshot (245).png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10805,,,,,,,,,,,,,,*Expected Result:* Search results show doctors located in Cairo - Nasr City only.,,,,,,,,,,,*Pre-conditions:* Patient is on Doctor Search page.,,,,,,,Design,,0|i001cm:xv,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"*Test Steps:*
+
+# Open City/Area dropdown.
+# Select ""Cairo - Nasr City"".",,,,,,,,,,,"*Test Data:* Area = ""Cairo - Nasr City"".",,,,,,,10/Sep/26 12:01 AM;712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae;[~accountid:712020:88156e42-7564-4f49-85cb-c14523094766] could you please try all locations and see what the expected results of them in separate test cases,,To Do,08/Sep/26 3:12 AM
+TC-03-04: Verify valid price range,HL-41,10892,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,08/Sep/26 3:13 AM,11/Sep/26 6:28 PM,,,,0,,positive scenario,,Ritaj Ayman,Toqa Gamal,712020:88156e42-7564-4f49-85cb-c14523094766,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-14,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*Expected Result:* Doctors with consultation fees between 50 EGP and 2000 EGP are displayed.,,,,,,,,,,,*Pre-conditions:* Patient is on Doctor Search page.,,,,,,,Design,,0|i001cm:xx,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"*Test Steps:*
+
+# Enter 50 into Min Price field.
+# Enter 2000 into Max Price field.
+# Apply search.",,,,,,,,,,,"*Test Data:* Min Price = 50, Max Price = 2000.",,,,,,,10/Sep/26 12:06 AM;712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae;[~accountid:712020:88156e42-7564-4f49-85cb-c14523094766] could you try invalid ranges to see what the expected results,,To Do,08/Sep/26 3:13 AM
+TC-03-05: Verify price validation when Min > Max,HL-42,10893,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,08/Sep/26 3:13 AM,11/Sep/26 6:30 PM,,,,0,,Negative scenario ,,Ritaj Ayman,Toqa Gamal,712020:88156e42-7564-4f49-85cb-c14523094766,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-14,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 6:30 PM;ug:2206b2ea-d3ef-4926-a070-0233c8477acb;Screenshot (246).png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10806,,,,,,,,,,,,,,*Expected Result:* System rejects query and shows validation error preventing search.,,,,,,,,,,,*Pre-conditions:* Patient is on Doctor Search page.,,,,,,,Design,,0|i001cm:xy,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"*Test Steps:*
+
+# Enter 500 into Min Price.
+# Enter 200 into Max Price.
+# Submit or trigger filter.",,,,,,,,,,,"*Test Data:* Min Price = 500, Max Price = 200.",,,,,,,10/Sep/26 12:15 AM;712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae;[~accountid:712020:88156e42-7564-4f49-85cb-c14523094766] title needs to be edited as you validate rejection of  queries with min >max,,To Do,08/Sep/26 3:13 AM
+TC-03-06: Verify empty state message,HL-43,10894,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,08/Sep/26 3:14 AM,11/Sep/26 6:31 PM,,,,0,,negative scenario,,Ritaj Ayman,Toqa Gamal,712020:88156e42-7564-4f49-85cb-c14523094766,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-14,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 6:31 PM;ug:2206b2ea-d3ef-4926-a070-0233c8477acb;Screenshot (246).png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10807,,,,,,,,,,,,,,"*Expected Result:* System displays inline message: {{""No doctors found matching your criteria.""}}",,,,,,,,,,,*Pre-conditions:* Patient is on Doctor Search page.,,,,,,,Design,,0|i001cm:xz,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"*Test Steps:*
+
+# Enter keyword with no matches into search bar.",,,,,,,,,,,"*Test Data:* Search keyword = ""NonExistentDoc123"".",,,,,,,"10/Sep/26 12:17 AM;712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae;[~accountid:712020:88156e42-7564-4f49-85cb-c14523094766]  its ok, very good 👏 ",,To Do,08/Sep/26 3:14 AM
+Test Case peer review 03,HL-15,10678,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,07/Sep/26 1:09 AM,10/Sep/26 12:39 AM,,,,0,,,,Ritaj Ayman,Toqa Gamal,712020:88156e42-7564-4f49-85cb-c14523094766,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-13,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cm:y,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10/Sep/26 12:39 AM;712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae;[~accountid:712020:88156e42-7564-4f49-85cb-c14523094766] could you please create more test cases to cover all gaps and try to apply techniques like BVA and EP in the ranges given in the requirements,,To Do,07/Sep/26 1:09 AM
+Test Case Execution 03,HL-16,10679,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,07/Sep/26 1:11 AM,07/Sep/26 1:11 AM,,,,0,,,,Ritaj Ayman,,712020:88156e42-7564-4f49-85cb-c14523094766,,,,,,,,,,,,HL-13,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cm:z,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,07/Sep/26 1:11 AM
+REQ-FUN-04 Doctor Profile & Schedule Grid Selection,HL-17,10727,Story,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,07/Sep/26 11:32 AM,07/Sep/26 11:36 AM,,,,0,,"*User Story:*
+As a logged-in patient, I want to view a doctor's detailed profile and select an available time slot so that I can initiate my booking.
+
+*Functional Specifications:*
+• Profile Info: Doctor Name, Photo, Specialty, Consultation Fee, Address, Rating (1.0 to 5.0 stars).
+• Schedule Grid: Displays available slots for the upcoming 7 calendar days only.
+• Grouping: Slots are grouped by Date and Time (e.g., Monday, Oct 12 - 05:00 PM).
+• Booked Slots: Previously booked slots are greyed out and marked as ""Booked"".
+
+*Validation / Exception Handling:*
+• Past dates and past time slots must be disabled.",,Ritaj Ayman,,712020:88156e42-7564-4f49-85cb-c14523094766,,,,,,,,,,,,,,HL-18,HL-19,HL-20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cm:zi,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,3.0,,,,,,,,,,,To Do,07/Sep/26 11:32 AM
+Test Case design 04,HL-18,10728,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,07/Sep/26 11:33 AM,08/Sep/26 3:17 AM,,,,0,,,,Ritaj Ayman,,712020:88156e42-7564-4f49-85cb-c14523094766,,,,,,,,,,,,HL-17,,HL-44,HL-45,HL-46,HL-47,HL-48,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cm:zr,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,07/Sep/26 11:33 AM
+TC-04-01: Verify doctor profile details display,HL-44,10895,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,08/Sep/26 3:15 AM,11/Sep/26 6:53 PM,,,,0,,positive scenario,,Ritaj Ayman,Toqa Gamal,712020:88156e42-7564-4f49-85cb-c14523094766,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 6:53 PM;ug:2206b2ea-d3ef-4926-a070-0233c8477acb;Screenshot (248).png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10810,,,,,,,,,,,,,,"*Expected Result:* Profile displays: Doctor Name, Photo, Specialty, Consultation Fee, Address, and Rating (between 1.0 and 5.0 stars).",,,,,,,,,,,*Pre-conditions:* Patient is on Doctor Search page.,,,,,,,Design,,0|i001cm:zt,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"*Test Steps:*
+
+# Click on any doctor card to open full profile.",,,,,,,,,,,"*Test Data:*
+
+* Doctor profile attributes: Name (text), Photo (image file), Specialty ({{Cardiology}}, {{Dermatology}}, {{Pediatrics}}, or {{Dentistry}}), Consultation Fee ({{50 EGP}} to {{2000 EGP}}), Address (text), Rating ({{1.0}} to {{5.0}} stars).",,,,,,,10/Sep/26 12:20 AM;712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae;[~accountid:712020:88156e42-7564-4f49-85cb-c14523094766] Very good 👏 ,,To Do,08/Sep/26 3:15 AM
+TC-04-02: Verify slots display for upcoming 7 days only,HL-45,10896,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,08/Sep/26 3:16 AM,11/Sep/26 6:55 PM,,,,0,,positive scenario,,Ritaj Ayman,Toqa Gamal,712020:88156e42-7564-4f49-85cb-c14523094766,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 6:55 PM;ug:2206b2ea-d3ef-4926-a070-0233c8477acb;Screenshot (249).png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10811,,,,,,,,,,,,,,"*Expected Result:* Slots are displayed strictly for upcoming 7 calendar days only, grouped by Date and Time.",,,,,,,,,,,*Pre-conditions:* Doctor profile opened.,,,,,,,Design,,0|i001cm:zu,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"*Test Steps:*
+
+# Check the schedule grid view.",,,,,,,,,,,"*Test Data:*
+
+* System Date: Current date.
+* Date range boundaries: {{Day 1}} through {{Day 7}} (Boundary: {{Day 8}} must not be visible).
+* Slot format: {{[Day, Month DD - HH:MM AM/PM]}} (e.g., {{Monday, Oct 12 - 05:00 PM}}).",,,,,,,"10/Sep/26 12:22 AM;712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae;[~accountid:712020:88156e42-7564-4f49-85cb-c14523094766] it's ok, very good 👍 ",,To Do,08/Sep/26 3:16 AM
+TC-04-03: Verify booked slots are disabled,HL-46,10897,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,08/Sep/26 3:16 AM,11/Sep/26 7:00 PM,,,,0,,negative scenario,,Ritaj Ayman,Toqa Gamal,712020:88156e42-7564-4f49-85cb-c14523094766,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 6:59 PM;ug:2206b2ea-d3ef-4926-a070-0233c8477acb;Screenshot (250).png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10812,,,,,,,,,,,,,,"*Expected Result:* Slot is greyed out, marked as ""Booked"", and not selectable.",,,,,,,,,,,*Pre-conditions:* Doctor schedule contains pre-booked appointments.,,,,,,,Design,,0|i001cm:zui,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"*Test Steps:*
+
+# Locate a slot marked as booked.
+# Attempt to click on it.",,,,,,,,,,,"*test Data:*
+
+* Slot Status: {{Booked}}.
+* Visual state: Greyed out button / non-clickable UI element.",,,,,,,10/Sep/26 12:26 AM;712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae;[~accountid:712020:88156e42-7564-4f49-85cb-c14523094766] tamam ,,To Do,08/Sep/26 3:16 AM
+TC-04-04: Verify past dates and times are disabled,HL-47,10898,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,08/Sep/26 3:17 AM,11/Sep/26 7:00 PM,,,,0,,negative scenario,,Ritaj Ayman,Toqa Gamal,712020:88156e42-7564-4f49-85cb-c14523094766,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*Expected Result:* Past dates and past hours are completely disabled and unclickable.,,,,,,,,,,,*Pre-conditions:* Doctor schedule grid opened.,,,,,,,Design,,0|i001cm:zur,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"*Test Steps:*
+
+# Observe time slots earlier than current system time/date.",,,,,,,,,,,"*Test Data:*
+
+* Date: {{Current Date - 1 day}}.
+* Time: Any slot earlier than current system clock time on the current day.",,,,,,,"10/Sep/26 12:32 AM;712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae;[~accountid:712020:88156e42-7564-4f49-85cb-c14523094766] could you try a real date in the expected result and see if it is really blocked on date -1
+
+Specify the tested date in the test data that you will enter ",,To Do,08/Sep/26 3:17 AM
+TC-04-05: Verify selecting an available slot,HL-48,10899,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,08/Sep/26 3:17 AM,11/Sep/26 7:01 PM,,,,0,,Positive scenario ,,Ritaj Ayman,Toqa Gamal,712020:88156e42-7564-4f49-85cb-c14523094766,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 7:01 PM;ug:2206b2ea-d3ef-4926-a070-0233c8477acb;Screenshot (251).png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10813,,,,,,,,,,,,,,*Expected Result:* Selected slot is highlighted and user proceeds to checkout.,,,,,,,,,,,*Pre-conditions:* Doctor profile opened with available upcoming slots.,,,,,,,Design,,0|i001cm:zuv,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"*Test Steps:*
+
+# Click on any active, available time slot.",,,,,,,,,,,"*Test Data:*
+
+* Slot Status: {{Available}}.
+* Schedule selection: Any unreserved future slot within the valid 7-day window.",,,,,,,"10/Sep/26 12:34 AM;712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae;[~accountid:712020:88156e42-7564-4f49-85cb-c14523094766] its ok ,very good 👏 ",,To Do,08/Sep/26 3:17 AM
+Test Case peer review 04,HL-19,10729,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,07/Sep/26 11:35 AM,10/Sep/26 12:40 AM,,,,0,,,,Ritaj Ayman,Toqa Gamal,712020:88156e42-7564-4f49-85cb-c14523094766,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-17,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cm:zv,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10/Sep/26 12:40 AM;712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae;[~accountid:712020:88156e42-7564-4f49-85cb-c14523094766] could you please create more test cases to cover all gaps and try to apply techniques like State Transition Testing,,To Do,07/Sep/26 11:35 AM
+Test Case Execution 04,HL-20,10730,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,Ritaj Ayman,712020:88156e42-7564-4f49-85cb-c14523094766,07/Sep/26 11:35 AM,07/Sep/26 11:36 AM,,,,0,,,,Ritaj Ayman,,712020:88156e42-7564-4f49-85cb-c14523094766,,,,,,,,,,,,HL-17,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cm:zx,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,07/Sep/26 11:35 AM
+REQ-FUN-05 Patient Details & Promo Code Engine,HL-2,10660,Story,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,06/Sep/26 10:56 PM,07/Sep/26 8:57 PM,,,,0,,"*User Story:* 
+
+As a logged-in patient, I want to enter patient details and apply promo codes to calculate the final consultation price. 
+
+*Functional Specifications:* 
+
+* Patient Selection: “Booking for Myself” (Default) vs “Booking for Someone Else”.
+* Beneficiary: Selecting “Booking for Someone Else” requires Beneficiary Name (Alpha, 3-50 chars) and Beneficiary Phone (11-digit EG format).
+* Promo Input: Up to 15 chars; Alphanumeric + Hyphens. Input triggers trim and uppercase normalization. 
+* SAVE10: Deducts 10% from total fee.
+* FLAT50: Deducts 50 EGP flat rate.
+* BEST-QA: Deducts 100% (Total = 0 EGP).
+
+ *Validation / Exception Handling:* 
+
+* BEST-QA message: “Discount Applied! You are officially the best QA team. ” 
+* Unrecognized codes trigger: “Invalid or expired promo code.” 
+* Promo code cannot be applied more than once per booking session. 
+* Total fee after discount cannot fall below 0 EGP.",,Toqa Gamal,,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,,,,HL-3,HL-6,HL-29,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001cn:,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,5.0,,,,,,,,,,,To Do,06/Sep/26 10:56 PM
+Test Case Design 05,HL-3,10662,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,06/Sep/26 11:09 PM,11/Sep/26 8:27 AM,,,,0,,,,Toqa Gamal,,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,,HL-2,,HL-86,HL-87,HL-88,HL-89,HL-90,HL-91,HL-92,HL-93,HL-94,HL-95,HL-96,HL-97,HL-98,HL-99,HL-100,HL-101,HL-102,HL-103,HL-104,HL-105,HL-106,HL-107,HL-108,HL-109,HL-110,HL-112,HL-113,HL-114,HL-115,HL-116,HL-117,HL-118,HL-119,HL-120,HL-121,HL-122,HL-123,HL-124,HL-141,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001d3:,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,06/Sep/26 11:09 PM
+Verify that patient selection by default is Booking for Myself,HL-86,11267,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 1:10 PM,11/Sep/26 5:42 PM,,,,0,,Verify that the correct option is selected by default on the Checkout page when the user does not manually select any radio button.,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,patient selection by default is Booking for Myself,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot 
+
+being on the checkout page",,,,,,,Design,,0|i001e3:,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient 
+# Choose a suitable doctor slot 
+# proceed to the Checkout page
+# Do not select any radio button radio button and observe which option is selected by default.",,,,,,,,,,,without selection ,,,,,,,"11/Sep/26 1:34 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;Add the missing description, also step 3 should clearly state to proceed to the checkout page, and step 4 should specify not selecting any radio button and observing the default selection.",,To Do,09/Sep/26 1:10 PM
+Verify that patient can Book for Someone Else,HL-87,11268,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 1:17 PM,11/Sep/26 5:45 PM,,,,0,,verify that the patient can select “Booking for someone Else“ during the checkout process and proceed with the booking for another person.,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Patient Selection : Booking for Someone Else,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001e9:,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient 
+# Choose a suitable doctor slot 
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else",,,,,,,,,,,choose “Booking for Someone Else”,,,,,,,11/Sep/26 1:47 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;can you add the description ,,To Do,09/Sep/26 1:17 PM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Name (Alpha,  3-50 chars)",HL-88,11301,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 2:11 PM,11/Sep/26 5:57 PM,,,,0,,"Verify that when “Booking for Someone Else“ is selected, the patient full name field accepts only alphabetic characters between 3 and 50 characters and displays validation for invalid names.",,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Payment confirmed with a msg: ”Appointment confirmed!” with Booking details ,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ec:,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Valid Patient Full Name (3–50 alphabetic characters): {{""toq""}}
+# Invalid Patient Full Name – less than 3 characters: {{""to""}}
+# Invalid Patient Full Name – more than 50 characters: {{""toqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq""}} (51 characters)
+# Invalid Patient Full Name – non-alphabetic: {{""toq123""}}
+# Apply Promo code : “SAVE10”
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment  ",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name alpha with 3 char : ”toq” 
+
+in *Patient phone* : ""01134563453""
+
+in Promo code : SAVE10
+
+in Payment method : Pay at clinic (Cash)",,,,,,,"11/Sep/26 1:53 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;the test data only verifies a valid 3 charc name and does not fully cover the alpha, 3-50 charc requirement please add invalid test cases for less tha 3, more than 50 and non-alphabetic characters. also, update the expected result to verify the name validation , add the missing desciption.",,To Do,09/Sep/26 2:11 PM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Name (Alpha, 3-50 chars)",HL-89,11302,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 2:16 PM,11/Sep/26 6:05 PM,,,,0,,"Verify that when “Booking for Someone Else” is selected, the Patient Full Name accepts alphabetic names between 3 and 50 characters and validates names outside the allowed character limit.",,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Patient Full Name accepts alphabetic names containing 3–50 characters. Names with 2 characters or 51 characters should be rejected or display a validation message. The appointment should only be confirmed when a valid Patient Full Name is entered.,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ed:,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Enter each Patient Full Name boundary test value (2, 3, 50, and 51 characters) and observe the validation.
+# Fill *Patient phone* with data ""01134563453""
+# Apply Promo code : “SAVE10”
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name alpha with 4 char : ”toqa” 
+
+in *Patient phone* : ""01134563453""
+
+in Promo code : SAVE10
+
+in Payment method : Pay at clinic (Cash)",,,,,,,11/Sep/26 1:58 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;add boundary cases for the 3-50 character limit andd update the expected result to match the name validation,,To Do,09/Sep/26 2:16 PM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Name (Alpha, 3-50 chars)",HL-90,11303,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 2:24 PM,11/Sep/26 2:02 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Payment confirmed with a msg: ”Appointment confirmed!” with Booking details,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Fill *Patient full name* with test data ”QDTkrFUBhkHcqYaVNFCWBMnTzPtjgWDqdXULTSycdzzmtMcFm”
+# Fill *Patient phone* with data ""01134563453""
+# Apply Promo code : SAVE10
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name alpha with 49 char : ”QDTkrFUBhkHcqYaVNFCWBMnTzPtjgWDqdXULTSycdzzmtMcFm”
+
+in *Patient phone* : ""01134563453""
+
+in Promo code : SAVE10
+
+in Payment method : Pay at clinic (Cash)",,,,,,,"11/Sep/26 2:02 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great, all looks good",,To Do,09/Sep/26 2:24 PM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Name (Alpha, 3-50 chars)",HL-91,11304,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 2:30 PM,11/Sep/26 2:04 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Payment confirmed with a msg: ”Appointment confirmed!” with Booking details,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:i,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Fill *Patient full name* with test data ”StajGgwVgMvtVLYJkErVhChxtxaVUFCVzeYBbQJSZSVJzXCdmj”
+# Fill *Patient phone* with data ""01134563453""
+# Apply Promo code : SAVE10
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name alpha with 50 char : ”StajGgwVgMvtVLYJkErVhChxtxaVUFCVzeYBbQJSZSVJzXCdmj”
+
+in *Patient phone* : ""01134563453""
+
+in Promo code : SAVE10
+
+in Payment method : Pay at clinic (Cash)",,,,,,,11/Sep/26 2:04 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;perfect ,,To Do,09/Sep/26 2:30 PM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Name (Alpha, 3-50 chars)",HL-92,11305,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 2:40 PM,11/Sep/26 2:04 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,," *validation msg should be appear :""Use 3–50 alphabetic characters and spaces only.”and before confirmation ,msg appear: “*Please correct the highlighted fields.”",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:r,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Fill *Patient full name* with test data “to“
+# Fill *Patient phone* with data ""01134563453""
+# Apply Promo code : SAVE10
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name alpha with 2 char : “to“
+
+in *Patient phone* : ""01134563453""
+
+in Promo code : SAVE10
+
+in Payment method : Pay at clinic (Cash)",,,,,,,11/Sep/26 2:04 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;perfecttt,,To Do,09/Sep/26 2:40 PM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Name (Alpha, 3-50 chars)",HL-93,11306,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 2:54 PM,11/Sep/26 2:06 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,HL-133,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,," *validation msg should be appear :""Use 3–50 alphabetic characters and spaces only.”and before confirmation ,msg appear: “*Please correct the highlighted fields.”",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:v,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Fill *Patient full name* with test data “qbnfWQJPurUxLbGBiwjtCfrZVCXuWjhcrMwpPbYrhHeZHTBQMfw”
+# Fill *Patient phone* with data ""01134563453""
+# Apply Promo code : SAVE10
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name alpha with 51 char : “qbnfWQJPurUxLbGBiwjtCfrZVCXuWjhcrMwpPbYrhHeZHTBQMfw”
+
+in *Patient phone* : ""01134563453""
+
+in Promo code : SAVE10
+
+in Payment method : Pay at clinic (Cash)",,,,,,,11/Sep/26 2:06 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;perfect ,,To Do,09/Sep/26 2:54 PM
+"User Selecting ""Booking for Someone Else"" with Beneficiary Name out of range (51 chars)",HL-133,11680,Bug,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,11/Sep/26 5:59 AM,11/Sep/26 6:01 AM,,,,0,,,,Toqa Gamal,,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,,HL-93,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 5:53 AM;ug:109e9bfa-a9a5-4309-af3d-74ca4ebf7f13;Screen Recording 2026-09-11 055247.mp4;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10638,,,,"The *Patient full name* field trim the char greater than 50 char &
+
+Payment confirmed with a msg: ”Appointment confirmed!” with Booking details",,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,," *validation msg should be appear :""Use 3–50 alphabetic characters and spaces only.”and before confirmation ,msg appear: “*Please correct the highlighted fields.”",,,,,,,,,,,,,,,,,Medium,,,0|i001ee:w,,,,,,,Medium,HL Sprint 1,,,,,,,,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Fill *Patient full name* with test data “qbnfWQJPurUxLbGBiwjtCfrZVCXuWjhcrMwpPbYrhHeZHTBQMfw”
+# Fill *Patient phone* with data ""01134563453""
+# Apply Promo code : SAVE10
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 5:59 AM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Name (Alpha, 3-50 chars)",HL-94,11307,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 3:02 PM,11/Sep/26 6:08 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Payment confirmed with a msg: ”Appointment confirmed!” with Booking details,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:x,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Fill *Patient full name* with test data “t o”
+# Fill *Patient phone* with data ""01134563453""
+# Apply Promo code : SAVE10
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name alpha with space char :  “t o”
+
+in *Patient phone* : ""01134563453""
+
+in Promo code : SAVE10
+
+in Payment method : Pay at clinic (Cash)",,,,,,,11/Sep/26 2:08 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;Great,,To Do,09/Sep/26 3:02 PM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Name (Alpha, 3-50 chars)",HL-95,11308,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 3:07 PM,11/Sep/26 2:08 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"*validation msg should be appear :""Use 3–50 alphabetic characters and spaces only.”and before confirmation ,msg appear: “*Please correct the highlighted fields.”",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:y,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Fill *Patient full name* with test data “to@q“ or “T2aq“
+# Fill *Patient phone* with data ""01134563453""
+# Apply Promo code : SAVE10
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name alpha with special char : “to@q“ or “T2aq“
+
+in *Patient phone* : ""01134563453""
+
+in Promo code : SAVE10
+
+in Payment method : Pay at clinic (Cash)",,,,,,,11/Sep/26 2:08 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;perfect,,To Do,09/Sep/26 3:07 PM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Phone (11-digit EG format).",HL-96,11309,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 3:13 PM,11/Sep/26 2:09 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Payment confirmed with a msg: ”Appointment confirmed!” with Booking details,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:z,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Fill *Patient full name* with test data “toqa“
+# Fill *Patient phone* with data ""01136563453""
+# Apply Promo code : SAVE10
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name : “toqa“
+
+in *Patient phone* : ""01136563453""
+
+in Promo code : SAVE10
+
+in Payment method : Pay at clinic (Cash)",,,,,,,11/Sep/26 2:09 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;perfect,,To Do,09/Sep/26 3:13 PM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Phone (11-digit EG format).",HL-97,11310,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 3:18 PM,11/Sep/26 2:10 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Payment confirmed with a msg: ”Appointment confirmed!” with Booking details,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zi,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Fill *Patient full name* with test data “toqa“
+# Fill *Patient phone* with data ""01096735511""
+# Apply Promo code : SAVE10
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name : “toqa“
+
+in *Patient phone* : ""01096735511""
+
+in Promo code : SAVE10
+
+in Payment method : Pay at clinic (Cash)",,,,,,,11/Sep/26 2:10 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;greatt,,To Do,09/Sep/26 3:18 PM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Phone (11-digit EG format).",HL-98,11312,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 3:27 PM,11/Sep/26 6:09 PM,,,,0,,"Verify that when *“Booking for Someone Else”* is selected, the Patient Phone field accepts a valid 11-digit Egyptian phone number and allows the appointment to be confirmed successfully.",,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Payment confirmed with a msg: ”Appointment confirmed!” with Booking details,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zr,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Fill *Patient full name* with test data “toqa“
+# Fill *Patient phone* with data ""01223473451""
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name : “toqa“
+
+in *Patient phone* : ""01223473451""
+
+in Payment method : Pay at clinic (Cash)",,,,,,,11/Sep/26 2:11 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great but can you add the description,,To Do,09/Sep/26 3:27 PM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Phone (11-digit EG format).",HL-99,11313,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 3:31 PM,11/Sep/26 2:11 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Payment confirmed with a msg: ”Appointment confirmed!” with Booking details,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zv,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Fill *Patient full name* with test data “toqa“
+# Fill *Patient phone* with data ""01573473451""
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name : “toqa“
+
+in *Patient phone* : ""01573473451""
+
+in Payment method : Pay at clinic (Cash)",,,,,,,11/Sep/26 2:11 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;perfect,,To Do,09/Sep/26 3:31 PM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Phone (11-digit EG format).",HL-100,11314,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 3:38 PM,11/Sep/26 2:12 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"*validation msg should be appear :""Enter an 11-digit Egyptian number.” and before confirmation ,msg appear: “*Please correct the highlighted fields.”",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zx,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Fill *Patient full name* with test data “toqa“
+# Fill *Patient phone* with data ""01896735511""
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name : “toqa“
+
+in *Patient phone* : ""01896735511”
+
+in Payment method : Pay at clinic (Cash)",,,,,,,11/Sep/26 2:12 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;perfect ,,To Do,09/Sep/26 3:38 PM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Phone (11-digit EG format).",HL-101,11315,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 3:43 PM,11/Sep/26 2:12 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"*validation msg should be appear :""Enter an 11-digit Egyptian number.” and before confirmation ,msg appear: “*Please correct the highlighted fields.”",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zy,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Fill *Patient full name* with test data “toqa“
+# Fill *Patient phone* with data ""01""
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name : “toqa“
+
+in *Patient phone* : ""01”
+
+in Payment method : Pay at clinic (Cash)",,,,,,,11/Sep/26 2:12 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great,,To Do,09/Sep/26 3:43 PM
+"Verify that by Selecting ""Booking for Someone Else"" requires Beneficiary Phone (11-digit EG format).",HL-102,11316,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 3:47 PM,11/Sep/26 2:13 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"*validation msg should be appear :""Enter an 11-digit Egyptian number.” and before confirmation ,msg appear: “*Please correct the highlighted fields.”",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zz,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Someone Else
+# Fill *Patient full name* with test data “toqa“
+# Fill *Patient phone* with data ""01@"" or “01a“
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for someone else
+
+in Patient full name : “toqa“
+
+in *Patient phone* : ""01@” or ”01a”
+
+in Payment method : Pay at clinic (Cash)",,,,,,,11/Sep/26 2:13 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great job,,To Do,09/Sep/26 3:47 PM
+Verify that  Promo Input: Up to 15 chars; Alphanumeric ,HL-103,11317,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 4:08 PM,11/Sep/26 6:11 PM,,,,0,,Verify that the Promo Code field accepts alphanumeric promo codes up to 15 characters and validates codes that exceed the maximum length.,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Discount is applied: ”SAVE10 applied successfully,” and the check is Discount -10 EGP, and the total decreased by 10. It can be applied once per booking session",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzi,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : SAVE10
+# Select Apply",,,,,,,,,,,in Promo code : SAVE10,,,,,,,11/Sep/26 2:15 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;Valid promo code is covered please add boundary cases for the 15 character limit.,,To Do,09/Sep/26 4:08 PM
+Verify that Promo Input: Up to 15 chars; Alphanumeric ,HL-104,11318,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 4:13 PM,11/Sep/26 2:15 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Discount is applied: ”FLAT50 applied successfully.” The discount is -50 EGP, and the total decreased by 50. It can be applied once per booking session",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzr,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : FLAT50
+# Select Apply",,,,,,,,,,,in Promo code : FLAT50,,,,,,,11/Sep/26 2:15 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;perfect,,To Do,09/Sep/26 4:13 PM
+Verify that BESTQA Promo Code Applies the Expected Discount Without Reducing Total Below 0 EGP,HL-105,11321,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 4:23 PM,11/Sep/26 6:14 PM,,,,0,,"Verify that applying the *BESTQA* promo code displays the expected success message, applies the discount once, and ensures the total fee does not fall below 0 EGP.",,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,HL-134,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Discount is applied : ”Discount Applied! You are officially the best QA team.”  and Total = 0 EGP once and Total fee after discount cannot fall below 0 EGP,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzv,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : BESTQA
+# Select Apply",,,,,,,,,,,in Promo code : BESTQA,,,,,,,11/Sep/26 2:16 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;update the summary to match the BESTQA promo behavior being tested,,To Do,09/Sep/26 4:23 PM
+that Promo Input (BESTQA) set as invalid code,HL-134,11681,Bug,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,11/Sep/26 6:34 AM,11/Sep/26 6:35 AM,,,,0,,,,Toqa Gamal,,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,,HL-105,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 6:30 AM;ug:109e9bfa-a9a5-4309-af3d-74ca4ebf7f13;Screenshot 2026-09-11 062617.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10640,,,,"Expected msg : ""Invalid or expired promo code.” & Discount will not be applied",,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Discount is applied : ”Discount Applied! You are officially the best QA team.”  and Total = 0 EGP once and Total fee after discount cannot fall below 0 EGP,,,,,,,,,,,,,,,,,High,,,0|i001ee:zzw,,,,,,,High,HL Sprint 1,,,,,,,,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : BESTQA
+# Select Apply",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 6:34 AM
+Verify that Promo Input: Up to 15 chars; Alphanumeric + Hyphens.,HL-106,11322,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 4:45 PM,11/Sep/26 2:24 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Expected msg : ""Invalid or expired promo code.” & Discount will not be applied",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzx,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : 
+# Select Apply",,,,,,,,,,,in Promo code : empty ,,,,,,,11/Sep/26 2:24 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great,,To Do,09/Sep/26 4:45 PM
+Verify that Promo Input: Up to 15 chars; Alphanumeric.Uppercase normalization.,HL-107,11324,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 4:55 PM,11/Sep/26 2:24 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Discount is applied: ”SAVE10 applied successfully,” and the check is Discount -10 EGP, and the total decreased by 10. It can be applied once per booking session",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzy,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : SaVE10 or saVe10
+# Select Apply",,,,,,,,,,,in Promo code : SaVE10 or saVe10,,,,,,,11/Sep/26 2:24 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great,,To Do,09/Sep/26 4:55 PM
+Verify that Promo Input: Up to 15 chars; Alphanumeric + Hyphens.,HL-108,11327,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 5:06 PM,11/Sep/26 2:26 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,HL-135,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Discount is applied: ”SAVE10 applied successfully,” and the check is Discount -10 EGP, and the total decreased by 10. It can be applied once per booking session",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzz,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : SAVE-10
+# Select Apply",,,,,,,,,,,in Promo code : SAVE-10,,,,,,,11/Sep/26 2:26 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great,,To Do,09/Sep/26 5:06 PM
+Promo Input(SAVE-10) set as invalid code but it should accept hyphens,HL-135,11686,Bug,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,11/Sep/26 6:46 AM,11/Sep/26 7:36 AM,,,,0,,,,Toqa Gamal,,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,,HL-108,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 6:44 AM;ug:109e9bfa-a9a5-4309-af3d-74ca4ebf7f13;Screenshot 2026-09-11 064206.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10642,,,,"This Msg appear ""Invalid or expired promo code.” & Discount will not be applied",,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Promo code must accept hyphens
+
+Discount is applied: ”SAVE10 applied successfully,” and the check is Discount -10 EGP, and the total decreased by 10. It can be applied once per booking session",,,,,,,,,,,,,,,,,High,,,0|i001ee:zzz9,,,,,,,Medium,HL Sprint 1,,,,,,,,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : SAVE-10
+# Select Apply",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 6:46 AM
+Verify that Promo Input: Up to 15 chars; Alphanumeric + Hyphens.,HL-109,11328,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 5:11 PM,11/Sep/26 2:28 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,HL-136,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Discount is applied: ”FLAT50 applied successfully.” The discount is -50 EGP, and the total decreased by 50. It can be applied once per booking session",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzi,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : FLAT-50
+# Select Apply",,,,,,,,,,,in Promo code : FLAT-50,,,,,,,11/Sep/26 2:28 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great,,To Do,09/Sep/26 5:11 PM
+Promo Input (FLAT-50) set as invalid code but it should accept hyphens,HL-136,11691,Bug,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,11/Sep/26 7:01 AM,11/Sep/26 7:36 AM,,,,0,,,,Toqa Gamal,,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,,HL-109,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 7:00 AM;ug:109e9bfa-a9a5-4309-af3d-74ca4ebf7f13;Screenshot 2026-09-11 065034.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10644,,,,"This Msg appear ""Invalid or expired promo code.” & Discount will not be applied",,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Promo code must accept hyphens
+
+Discount is applied: ”FLAT50 applied successfully.” The discount is -50 EGP, and the total decreased by 50. It can be applied once per booking session ",,,,,,,,,,,,,,,,,High,,,0|i001ee:zzzm,,,,,,,Medium,HL Sprint 1,,,,,,,,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : FLAT-50
+# Select Apply",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 7:01 AM
+Verify that Promo Input: Up to 15 chars; Alphanumeric + Hyphens.,HL-110,11329,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 5:16 PM,11/Sep/26 2:28 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,HL-137,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Discount is applied : ”Discount Applied! You are officially the best QA team.”  and Total = 0 EGP once and Total fee after discount cannot fall below 0 EGP,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzr,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : BEST-QA
+# Select Apply",,,,,,,,,,,in Promo code : BEST-QA,,,,,,,11/Sep/26 2:28 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;perfect,,To Do,09/Sep/26 5:16 PM
+Promo Input(BEST-QA) is set as if it was applied before when the user enters it for the first time,HL-137,11694,Bug,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,11/Sep/26 7:09 AM,11/Sep/26 7:19 AM,,,,0,,,,Toqa Gamal,,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,,HL-110,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 7:05 AM;ug:109e9bfa-a9a5-4309-af3d-74ca4ebf7f13;Screenshot 2026-09-11 070409.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10646,,,,This Msg appear “A promo code has already been applied to this booking.” for the first time applying it,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Discount is applied : ”Discount Applied! You are officially the best QA team.”  and Total = 0 EGP once and Total fee after discount cannot fall below 0 EGP,,,,,,,,,,,,,,,,,High,,,0|i001ee:zzzt,,,,,,,High,HL Sprint 1,,,,,,,,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : BEST-QA
+# Select Apply",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 7:09 AM
+Verify that Promo Input: Up to 15 chars; Alphanumeric.Uppercase normalization,HL-111,11332,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 5:26 PM,11/Sep/26 2:29 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Discount is applied: ”FLAT50 applied successfully.” The discount is -50 EGP, and the total decreased by 50. It can be applied once per booking session",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzv,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : FLaT50 or fLaT50
+# Select Apply",,,,,,,,,,,in Promo code : FLaT50 or fLaT50,,,,,,,11/Sep/26 2:29 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great,,To Do,09/Sep/26 5:26 PM
+Verify that Promo Input: Up to 15 chars; Alphanumeric & uppercase normalization.,HL-112,11333,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 5:31 PM,11/Sep/26 2:29 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,HL-138,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Discount is applied : ”Discount Applied! You are officially the best QA team.”  and Total = 0 EGP once and Total fee after discount cannot fall below 0 EGP,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzx,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : bESTqA
+# Select Apply",,,,,,,,,,,in Promo code : bESTqA,,,,,,,11/Sep/26 2:29 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;perfect,,To Do,09/Sep/26 5:31 PM
+ Promo Input(bESTqA) set as invalid code but it should accept small char ,HL-138,11695,Bug,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,11/Sep/26 7:31 AM,11/Sep/26 7:31 AM,,,,0,,,,Toqa Gamal,,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,,HL-112,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 7:26 AM;ug:109e9bfa-a9a5-4309-af3d-74ca4ebf7f13;Screenshot 2026-09-11 072554.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10648,,,,This msg appear “Invalid or expired promo code.” without discount applied,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Discount is applied : ”Discount Applied! You are officially the best QA team.”  and Total = 0 EGP once and Total fee after discount cannot fall below 0 EGP,,,,,,,,,,,,,,,,,High,,,0|i001ee:zzzxi,,,,,,,Medium,HL Sprint 1,,,,,,,,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : bESTqA
+# Select Apply",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 7:31 AM
+Verify that Promo Input: Up to 15 chars; Alphanumeric ,HL-113,11353,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 9:10 PM,11/Sep/26 2:30 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Expected msg : ""Invalid or expired promo code.” & Discount will not be applied",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzy,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : S@VE10
+# Select Apply",,,,,,,,,,,in Promo code : S@VE10,,,,,,,11/Sep/26 2:30 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great,,To Do,09/Sep/26 9:10 PM
+Verify that Promo Input: Up to 15 chars; Alphanumeric,HL-114,11354,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 9:16 PM,11/Sep/26 2:30 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Expected msg : ""Invalid or expired promo code.” & Discount will not be applied",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzz,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : FL AT#50$%
+# Select Apply",,,,,,,,,,,in Promo code : FL AT#50$%,,,,,,,11/Sep/26 2:30 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;perfect,,To Do,09/Sep/26 9:16 PM
+Verify that Promo Input: Up to 15 chars; Alphanumeric,HL-115,11356,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 9:21 PM,11/Sep/26 2:30 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Expected msg : ""Invalid or expired promo code.” & Discount will not be applied",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzzi,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : BE*ST Q@
+# Select Apply",,,,,,,,,,,in Promo code : BE*ST Q@,,,,,,,11/Sep/26 2:30 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great job,,To Do,09/Sep/26 9:21 PM
+Verify that Promo Input: Up to 15 chars; Alphanumeric + Hyphens &  Input triggers trim ,HL-116,11357,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 9:29 PM,11/Sep/26 2:31 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Discount is applied: ”SAVE10 applied successfully,” and the check is Discount -10 EGP, and the total decreased by 10. It can be applied once per booking session",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzzr,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : “ SAVE10 “ or “ SAVE10“ or ”SAVE10 ”
+# Select Apply",,,,,,,,,,,in Promo code : “ SAVE10 “ or “ SAVE10“ or ”SAVE10 ”,,,,,,,11/Sep/26 2:31 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;perfect,,To Do,09/Sep/26 9:29 PM
+Verify that Promo Input: Up to 15 chars; Alphanumeric +  Hyphens & Input triggers trim,HL-117,11358,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 9:35 PM,11/Sep/26 2:31 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Discount is applied: ”FLAT50 applied successfully.” The discount is -50 EGP, and the total decreased by 50. It can be applied once per booking session",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzzv,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : “ FLAT50 ” or “FLAT50 “ or ” FLAT50”
+# Select Apply",,,,,,,,,,,in Promo code : “ FLAT50 ” or “FLAT50 “ or ” FLAT50”,,,,,,,11/Sep/26 2:31 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great,,To Do,09/Sep/26 9:35 PM
+Verify that Promo Input: Up to 15 chars; Alphanumeric + Hyphens & Input triggers trim,HL-118,11359,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 9:43 PM,11/Sep/26 2:32 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,HL-139,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Discount is applied : ”Discount Applied! You are officially the best QA team.”  and Total = 0 EGP once and Total fee after discount cannot fall below 0 EGP,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzzx,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : “ BESTQA ” or “ BESTQA” or “BESTQA ”
+# Select Apply",,,,,,,,,,,in Promo code : “ BESTQA ” or “ BESTQA” or “BESTQA ”,,,,,,,11/Sep/26 2:32 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great,,To Do,09/Sep/26 9:43 PM
+Promo Input(“ BESTQA ” or “ BESTQA” or “BESTQA ”) set as invalid code but it should trim space ,HL-139,11696,Bug,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,11/Sep/26 8:01 AM,11/Sep/26 8:01 AM,,,,0,,,,Toqa Gamal,,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,,HL-118,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 8:00 AM;ug:109e9bfa-a9a5-4309-af3d-74ca4ebf7f13;Screenshot 2026-09-11 075750.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10652,11/Sep/26 8:00 AM;ug:109e9bfa-a9a5-4309-af3d-74ca4ebf7f13;Screenshot 2026-09-11 075821.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10653,11/Sep/26 8:00 AM;ug:109e9bfa-a9a5-4309-af3d-74ca4ebf7f13;Screenshot 2026-09-11 075918.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10654,,"This msg : ""Invalid or expired promo code.” appear and Discount is not applied ",,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Discount is applied : ”Discount Applied! You are officially the best QA team.”  and Total = 0 EGP once and Total fee after discount cannot fall below 0 EGP,,,,,,,,,,,,,,,,,High,,,0|i001ee:zzzzxi,,,,,,,High,HL Sprint 1,,,,,,,,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : “ BESTQA ” or “ BESTQA” or “BESTQA ”
+# Select Apply",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 8:01 AM
+Verify that Promo Input: Up to 15 chars; Alphanumeric + Hyphens & Unrecognized codes trigger,HL-119,11360,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 9:51 PM,11/Sep/26 2:33 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Expected msg : ""Invalid or expired promo code.” & Discount will not be applied",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzzy,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : SAVE20
+# Select Apply",,,,,,,,,,,in Promo code : SAVE20,,,,,,,11/Sep/26 2:33 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;perfect,,To Do,09/Sep/26 9:51 PM
+Verify that Promo Input: Up to 15 chars; Alphanumeric ,HL-120,11362,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 10:06 PM,11/Sep/26 2:33 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,HL-140,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Promo code field must accept 15 letter but 
+
+Expected msg : ""Invalid or expired promo code.” & Discount will not be applied",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzzz,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : “fCQLNxBMLxBpejT”
+# Select Apply",,,,,,,,,,,in Promo code : “fCQLNxBMLxBpejT” (15 letters),,,,,,,11/Sep/26 2:33 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great,,To Do,09/Sep/26 10:06 PM
+Promo code accept 10 chars only ,HL-140,11697,Bug,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,11/Sep/26 8:10 AM,11/Sep/26 8:17 AM,,,,0,,,,Toqa Gamal,,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,,HL-120,HL-122,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 8:09 AM;ug:109e9bfa-a9a5-4309-af3d-74ca4ebf7f13;Screenshot 2026-09-11 080428.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10656,,,,"Promo code field accept 10 letters only but the msg is applied ""Invalid or expired promo code.”",,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Promo code field must accept 15 letter but
+
+Expected msg : ""Invalid or expired promo code.” & Discount will not be applied",,,,,,,,,,,,,,,,,Medium,,,0|i001ee:zzzzz9,,,,,,,Low,HL Sprint 1,,,,,,,,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : “fCQLNxBMLxBpejT”
+# Select Apply",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 8:10 AM
+Verify that Promo Input: Up to 15 chars; Alphanumeric,HL-121,11363,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 10:10 PM,11/Sep/26 2:34 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Promo code field must accept 15 letter only but
+
+Expected msg : ""Invalid or expired promo code.” & Discount will not be applied",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzzzi,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : “fCQLNxBMLxBpejTa”
+# Select Apply",,,,,,,,,,,in Promo code : “fCQLNxBMLxBpejTa” (16 letters),,,,,,,11/Sep/26 2:34 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great,,To Do,09/Sep/26 10:10 PM
+Verify that Promo Input: Up to 15 chars; Alphanumeric,HL-122,11365,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 10:13 PM,11/Sep/26 6:18 PM,,,,0,,Verify that the Promo Code field accepts an alphanumeric value within the 15-character limit and displays the appropriate message when the entered promo code is invalid or expired.,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,HL-140,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Promo code field must accept 15 letter only but
+
+Expected msg : ""Invalid or expired promo code.” & Discount will not be applied",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzzzr,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : “fCQLNxBMLxBpej”
+# Select Apply",,,,,,,,,,,in Promo code : “fCQLNxBMLxBpej” (14 letters),,,,,,,"11/Sep/26 2:35 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;Great, applying the promo only once per booking session is covered correctly.",,To Do,09/Sep/26 10:13 PM
+Verify that Promo Input  applied once per booking session,HL-123,11376,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,09/Sep/26 11:20 PM,11/Sep/26 2:36 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Apply button should be disabled ,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzzzv,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : SAVE10
+# Select Apply 
+# Try to click Apply button again (or attempt to enter a new code)",,,,,,,,,,,in Promo code : SAVE10,,,,,,,11/Sep/26 2:36 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great,,To Do,09/Sep/26 11:20 PM
+Verify that  Patient could Booking for himself/herself,HL-124,11394,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,10/Sep/26 1:03 AM,11/Sep/26 2:38 PM,,,,0,,,,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,Payment confirmed with a msg: ”Appointment confirmed!” with Booking details,,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,Design,,0|i001ee:zzzzzx,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Check out progress with the confirmation of your booking
+# Select the radio button: Booking for Myself
+# Apply Promo code : SAVE10
+# Select Payment method : Pay at clinic (Cash)
+# Select Confirm appointment",,,,,,,,,,,"in Booking for : Booking for Myself
+
+in Promo code : SAVE10
+
+in Payment method : Pay at clinic (Cash)",,,,,,,11/Sep/26 2:38 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;great,,To Do,10/Sep/26 1:03 AM
+Verify that Total fee after discount cannot fall below 0 EGP.,HL-141,11703,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,11/Sep/26 8:27 AM,11/Sep/26 6:21 PM,,,,0,,"Verify that when the applied promo code discount exceeds the booking total, the final total does not fall below 0 EGP.",,Sogood Assaf,Toqa Gamal,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,HL-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://ahmedsayed28.github.io/Clinic-Booking-App/checkout.html,,,"Discount is applied: ”SAVE10 applied successfully,” and the check is Discount -10 EGP, and the total decreased by 10. It can be applied once per booking session",,,,,,,,,,,"to log in as a patient and choose a suitable doctor slot
+
+being on the checkout page",,,,,,,,,0|i001ee:zzzzzy,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Log in as a patient
+# Choose a suitable doctor slot
+# Apply Promo code : SAVE10
+# Select Apply",,,,,,,,,,,Promo code : SAVE10,,,,,,,11/Sep/26 2:39 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;Please update the test data and steps to verify a scenario where the discount could make the total fall below 0 EGP.,,To Do,11/Sep/26 8:27 AM
+Test Case Execution 05,HL-6,10669,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,06/Sep/26 11:17 PM,07/Sep/26 7:39 PM,,,,0,,,,Toqa Gamal,,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,,HL-2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i001ef:,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,06/Sep/26 11:17 PM
+Test Case peer  Review 05,HL-29,10849,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,Toqa Gamal,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,07/Sep/26 8:57 PM,07/Sep/26 8:58 PM,,,,0,,,,Toqa Gamal,,712020:bb1ca1a6-f28c-4efb-a827-d278e74913ae,,,,,,,,,,,,HL-2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0020f:,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,07/Sep/26 8:57 PM
+REQ-FUN-06 Payment Execution & Booking Finalization ,HL-21,10812,Story,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 5:22 PM,11/Sep/26 5:13 PM,,,,0,,"As a logged-in patient, i want to select a payment method and finalize my booking to receive a confirmed booking receipt.
+
+
+1. The patient can select either pay at clinic (Cash) or Credit Card 
+2. If Credit Card is selected, the card number must contain exactly 16 numeric digits.
+
+3.The expiry date must be in MM/YY format and must not be earlier than the current month/year.
+
+4.The CVV must contain exactly 3 numeric digits.
+
+5.When the transaction is finalized, the selected slot changes from Availabe to Booked.
+
+6.The system generates a unique 8-character booking reference ID .
+
+7.The booking receipt displays the booking ID, doctor, date/time, address, total paid, and payment method.",,Sogood Assaf,,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,,,,HL-32,HL-33,HL-34,HL-130,HL-131,HL-132,HL-129,HL-128,HL-127,HL-125,HL-146,HL-144,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0020j:,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,5.0,,,,,,,,,,,To Do,07/Sep/26 5:22 PM
+REQ-FUN-06 - Test Case Design,HL-32,10852,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 9:23 PM,07/Sep/26 10:04 PM,,,,0,,,,Sogood Assaf,,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,,HL-21,,HL-22,HL-23,HL-24,HL-25,HL-26,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0020k:,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,07/Sep/26 9:23 PM
+REQ-FUN-06 - Peer Review,HL-33,10853,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 9:25 PM,07/Sep/26 9:49 PM,,,,0,,,,Sogood Assaf,,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,,HL-21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0020k:i,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,07/Sep/26 9:25 PM
+REQ-FUN-06 - Test Execution,HL-34,10854,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 9:26 PM,11/Sep/26 3:28 PM,,,,0,,,,Sogood Assaf,,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,,HL-21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0020k:r,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"11/Sep/26 3:28 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;Test Execution – Card Number Validation: FAIL
+15-digit card number was rejected as expected.
+16-digit card number was accepted as expected.
+17-digit card number was incorrectly accepted instead of being rejected.",,To Do,07/Sep/26 9:26 PM
+verify successful booking using available payment methods ,HL-22,10838,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 7:22 PM,11/Sep/26 3:00 PM,,,,0,,verify that a logged-in patient can successfully finalize a booking using valid credit card details.,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-32,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,booking is successfuly confirmed. ,,,,,,,,,,,user is logged in and has selected an available doctor appointment slot and proceeded to checkout.,,,,,,,,,0|i0020l:,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1.proceed to checkout.
+
+2.select credit card as the payment method.
+
+3.enter a valid 16-digit card number.
+
+4.enter a valid future expiry date.
+
+5.enter a valid 3-digit CVV.
+
+6.confirm the booking.",,,,,,,,,,,"valid credit card: 1234567812345678
+
+expiry date: 12/27
+
+cvv:123",,,,,,,09/Sep/26 11:17 PM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;expected result is missing,11/Sep/26 2:50 PM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Done👏 ,To Do,07/Sep/26 7:22 PM
+Verify booking cannot proceed without selecting a payment method,HL-125,11399,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,10/Sep/26 1:56 AM,11/Sep/26 4:22 PM,,,,0,,verify that the user cannot complete the booking without selecting a payment method.,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Booking is not completed and a message asks the user to select a payment method.,,,,,,,,,,,"ser is logged in , has selected an available appointment, and is on the checkout page.",,,,,,,Design,,0|i0020l:i,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# proceed to the checkout page.
+# do not select payment method.
+# click confirm booking.",,,,,,,,,,,,,,,,,,11/Sep/26 2:51 PM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Great job ya sojood.👏,,To Do,10/Sep/26 1:56 AM
+verify card number validation for credit card payment ,HL-23,10839,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 7:57 PM,11/Sep/26 3:41 PM,,,,0,,verify that the system accepts only a 16-digit numeric card number and rejects card numbers with fewer or more than 16 digits.,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-32,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 3:40 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 153944.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10746,,,,,,,,,,,,,,"# The 15-digit card number is rejected.
+# The 16-digit numeric card number is accepted.
+# The 17-digit card number is rejected.",,,,,,,,,,,"user is logged in, has selected an available appointment slot, proceeded to checkout, and selected credit card as the payment method.",,,,,,,,,0|i0020m:,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"# enter a 15-digit card number.
+# verify the validation result.
+# enter a 16-digit card number.
+# verify the validation result.
+# enter a 17-digit card number.
+# verify the validation result.",,,,,,,,,,,"15-digit card number:123456789012345
+
+16-digit card number:1234567890123456
+
+17-digit card number:12345678901234567",,,,,,,09/Sep/26 11:26 PM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Great job ya sojood.👏  ,"11/Sep/26 3:41 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;The 15-digit card number was rejected and the 16-digit card number was accepted as expected. However, the 17-digit card number was incorrectly accepted. Please find the attached screenshot showing the 17-digit card number being accepted.",To Do,07/Sep/26 7:57 PM
+17-digit card number is accepted during credit card payment ,HL-144,11825,Bug,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,11/Sep/26 4:34 PM,11/Sep/26 5:13 PM,,,,0,,"the credit card field accepts a 17-digit card number, although only 16 digits should be accepted.",[https://ahmedsayed28.github.io/Clinic-Booking-App/doctors.html|https://ahmedsayed28.github.io/Clinic-Booking-App/doctors.html|smart-link] ,Sogood Assaf,,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,,HL-21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 4:45 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 153944.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10780,,,,the 17 digit card number is accepted and the booking and proceed,,,,,,,,,,the 17 digit card number should be rejected because only 16 digits are allowed.,,,,,,,,,,,,,,,,,Medium,,,0|i0020m:4,,,,,,,Medium,HL Sprint 1,,,,,,,,,,,,,,,"# go to the checkout page. 
+# select credit card.
+# enter a 17-digit card number:12345678901234567
+# enter a valid expiry date and cvv.
+# click confirm booking.",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 4:34 PM
+Verify booking fails when card number is empty,HL-127,11414,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,10/Sep/26 2:23 AM,11/Sep/26 4:21 PM,,,,0,,verify that booking cannot be completed when the card number field is empty.,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 3:35 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 153344.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10743,,,,,,,,,,,,,,Booking is not completed and a validation message is displayed for the card number.,,,,,,,,,,,"user is logged in, has selected an appointment, and is on the payment page.",,,,,,,Design,,0|i0020m:9,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1.Select Credit Card as the payment method.
+
+# Leave the Card Number field empty.
+# Enter a valid expiry date.
+# Enter a valid CVV.
+# Click Confirm Booking.",,,,,,,,,,,,,,,,,,11/Sep/26 2:52 PM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Great job ya sojood.👏,,To Do,10/Sep/26 2:23 AM
+verify expiry date validation for credit card payment ,HL-24,10841,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 8:14 PM,11/Sep/26 3:51 PM,,,,0,,verify that the system accepts expiry dates in MM/YY format when they are current or future dates and rejects expired or incorrectly formatted dates.,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-32,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 3:51 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 154747.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10753,11/Sep/26 3:51 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 154812.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10754,11/Sep/26 3:51 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 154908.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10752,11/Sep/26 3:51 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 154934.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10751,,,,,,,,,,,"1.08/26 is rejected because it is expired.
+
+2.09/26 is accepted because it is the current month/year.
+
+3.12/27 is accepted because it is a future date.
+
+4.1227 is rejected because it is not in MM/YY format.",,,,,,,,,,,"user is logged in, has selected an available appointment slot, proceeded to checkout, and selected credit card as the payment method.",,,,,,,,,0|i0020m:i,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# enter the expired date 08/26.
+# verify the validation result.
+# enter the current month/year 09/26.
+# verify the validation result.
+# enter the future date 12/27.
+# verify the validation result.
+# enter the invalid format 1227.
+# verify the validation result.",,,,,,,,,,,"expired date: 08/26
+
+current month/year:09/26
+
+future date:12/27
+
+invalid format: 1227",,,,,,,10/Sep/26 12:10 AM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Great job ya sojood.👏,,To Do,07/Sep/26 8:14 PM
+Verify expired Credit Card is rejected ,HL-128,11417,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,10/Sep/26 2:33 AM,11/Sep/26 4:21 PM,,,,0,,verify that the system rejects an expired credit card during booking.,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 3:53 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 155338.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10757,,,,,,,,,,,,,,Payment is rejected and an expiry date validation message is displayed.,,,,,,,,,,,"user is logged in, has selected an appointment, and is on the payment page.",,,,,,,Design,,0|i0020m:m,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Select Credit Card as the payment method.
+# Enter a valid card number.
+# Enter an expired date.
+# Enter a valid CVV.
+# Click Confirm Booking ",,,,,,,,,,,,,,,,,,11/Sep/26 2:53 PM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Great job ya sojood.👏,,To Do,10/Sep/26 2:33 AM
+verify CVV validation for credit card payment ,HL-25,10845,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 8:32 PM,11/Sep/26 3:57 PM,,,,0,,verify that the system accepts only a 3-digit numeric CVV and rejects CVVs with fewer or more than 3 digits.,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-32,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 3:55 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 155530.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10758,11/Sep/26 3:57 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 155616.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10759,11/Sep/26 3:57 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 155626.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10760,,,,,,,,,,,,"1.the 2-digit CVV (12) is rejected.
+
+# the 3-digit CVV (123) is accepted.
+# the 4-digit CVV (1234) is rejected .",,,,,,,,,,,"user is logged in has selected an available appointment slot, proceeded to checkout, and selected credit card as the payment method.",,,,,,,Design,,0|i0020m:r,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1.enter a 2-digit CVV:12 
+
+2.verify the validation result.
+
+3.enter a 3-digit CVV:123.
+
+# verify the validation result.
+# enter a 4-digit CVV:1234.
+# verify the validation result.",,,,,,,,,,,"2-digit CVV:12
+
+3-digit CVV:123
+
+4-digit CVV:1234",,,,,,,10/Sep/26 12:13 AM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Great job ya sojood.👏,,To Do,07/Sep/26 8:32 PM
+verify successful booking using pay at clinic (cash ),HL-26,10846,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 8:41 PM,11/Sep/26 4:02 PM,,,,0,,verify that the patient can successfully finalize a booking using the pay at clinic (cash ) payment method.,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-32,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 4:02 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 160119.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10763,,,,,,,,,,,,,,"The booking is successfully finalized. The selected slot changes from Available to Booked, a unique 8-character reference ID is generated, and the receipt displays the booking ID, doctor, date/time, address, total paid, and payment method as Pay at Clinic (Cash).",,,,,,,,,,,"user is logged in, has selected an available appointment slot, and proceeded to chechout.",,,,,,,Design,,0|i0020m:v,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"1.procees to checkout.
+
+2.select pay at clinic (cash) as the payment method.
+
+3.confirm the booking.
+
+4.verify the booking is finalized successfully.",,,,,,,,,,,payment method: pay at clinic (cash),,,,,,,10/Sep/26 12:14 AM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Great job ya sojood.👏,,To Do,07/Sep/26 8:41 PM
+payment method is not displayed on receipt for pay at clinic (cash) booking ,HL-146,11828,Bug,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,11/Sep/26 4:46 PM,11/Sep/26 5:13 PM,,,,0,,"# select an available appointment and proceed to checkout.
+# select pay at clinic (cash) as the payment method.
+# confirm the booking.
+# check the booking receipt.",,Sogood Assaf,,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,,HL-21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 4:51 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 161618.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10785,,,,"The booking is completed successfully, but the selected payment method is not displayed on the receipt ",,,,,,,,,,the receipt should display the payment method as pay at clinic (cash),,,,,,,,,,,,,,,,,Medium,,,0|i0020m:vi,,,,,,,Low,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 4:46 PM
+Verify payment failure displays an error message,HL-129,11420,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,10/Sep/26 2:41 AM,11/Sep/26 4:20 PM,,,,0,,Verify that an error message is displayed when the payment fails.,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Payment fails and a clear error message is displayed to the user.,,,,,,,,,,,"User is logged in, has selected an appointment, and is on the payment page.",,,,,,,Design,,0|i0020m:w,,,,,,,,HL Sprint 1,,,,,,,Block,,,,,,,,"1.Selected Credit Card as the payment method.
+
+# Enter valid card details.
+# Simulate a failed payment.
+# Click Confirm Booking.",,,,,,,,,,,,,,,,,,"11/Sep/26 2:57 PM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Great job ya sojood.👏 
+
+But you should link this test case with its user story",11/Sep/26 4:08 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;Blocked  no method or test data is available to simulate a failed payment.,To Do,10/Sep/26 2:41 AM
+Verify booking is not created after failed payment ,HL-130,11423,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,10/Sep/26 2:51 AM,11/Sep/26 4:12 PM,,,,0,,verify that a booking is not confirmed when the payment fails.,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Payment fails and no booking is created or confirmed.,,,,,,,,,,,"User is logged in, has selected an oppointment, and is on the payment page.",,,,,,,Design,,0|i0020m:wi,,,,,,,,HL Sprint 1,,,,,,,Block,,,,,,,,"1.Select Credit Card as the payment method.
+
+# Enter card details that cause the payment to fail.
+# Click Confirm Booking.
+# Check the booking status.",,,,,,,,,,,,,,,,,,"11/Sep/26 2:58 PM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Great job ya sojood.👏
+
+But you should link this test case with its user story",11/Sep/26 4:11 PM;712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00;Unable to execute because no test data or method is available to simulate a failed payment.,To Do,10/Sep/26 2:51 AM
+Verify duplicate booking is prevented when confirm is clicked multiple times ,HL-131,11424,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,10/Sep/26 2:59 AM,11/Sep/26 4:16 PM,,,,0,,Verify that multiple clicks on confirm booking do not create duplicate bookings.,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 4:16 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 161618.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10764,,,,,,,,,,,,,,Only one booking is created and no duplicate booking occurs.,,,,,,,,,,,"User is logged in, has selected an appointment, and is on the payment page.",,,,,,,Design,,0|i0020m:wr,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"# Select a valid payment method.
+# Enter valid payment details if required.
+# Click Confirm Booking multiple times quickly.
+# Check the user’s bookings.",,,,,,,,,,,,,,,,,,"11/Sep/26 2:58 PM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Great job ya sojood.👏
+
+But you should link this test case with its user story",,To Do,10/Sep/26 2:59 AM
+Verify booking confirmation is displayed after successful payment ,HL-132,11426,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,10/Sep/26 3:05 AM,11/Sep/26 4:18 PM,,,,0,,Verify that a confirmation message is displayed after a successful booking and payment ,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 4:18 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 161806.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10765,,,,,,,,,,,,,,Booking is confirmed and a success confirmation message is displayed.,,,,,,,,,,,"User is logged in, has selected an appointment, and is on the payment page.",,,,,,,Design,,0|i0020m:wv,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1.Select Credit Card as the payment method.
+
+2.Enter valid card details.
+
+3.Click Confirm Booking. 
+
+4.Complete the payment successfully.",,,,,,,,,,,,,,,,,,"11/Sep/26 3:01 PM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Great job ya sojood.👏
+
+But you should link this test case with its user story",,To Do,10/Sep/26 3:05 AM
+REQ-FUN-07 Appointment Dashboard & Cancellation,HL-27,10847,Story,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 8:47 PM,11/Sep/26 5:12 PM,,,,0,,"1.user can view upcoming and past/cancelled bookings.
+
+2.user can cancel a booking if it is more than 24 hours away.
+
+# after cancellation, the booking status changes to cancelled.
+# the cancelled slot becomes AVAILABLE again.
+# if the appointment is 24 hours or less away, the cancel button is disabled and a message is shown. ",,Sogood Assaf,,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,,,,HL-35,HL-36,HL-37,HL-147,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0020m:x,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,3.0,,,,,,,,,,,To Do,07/Sep/26 8:47 PM
+REQ-FUN-07 - Test Case Design,HL-35,10855,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 9:31 PM,07/Sep/26 10:05 PM,,,,0,,,,Sogood Assaf,,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,,HL-27,,HL-28,HL-30,HL-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0020m:xi,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,07/Sep/26 9:31 PM
+REQ-FUN-07 - Peer Review,HL-36,10856,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Nada Ahmed,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 9:32 PM,07/Sep/26 9:47 PM,,,,0,,,,Sogood Assaf,,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,,HL-27,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0020m:xr,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,07/Sep/26 9:32 PM
+REQ-FUN-07 - Test Execution,HL-37,10857,Task,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 9:32 PM,07/Sep/26 9:47 PM,,,,0,,,,Sogood Assaf,,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,,HL-27,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0020m:xv,,,,,,,,HL Sprint 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,07/Sep/26 9:32 PM
+verify successful cancellation more than 24 hours before appointment,HL-28,10848,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 8:54 PM,11/Sep/26 4:25 PM,,,,0,,check that the user can cancel a booking when the appointment is more than 24 hours away.,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 4:24 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 162351.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10768,11/Sep/26 4:25 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 162444.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10769,,,,,,,,,,,,,"The booking is cancelled successfully, the status changes to Cancelled, and the appointment slot becomes Available again.",,,,,,,,,,,user is logged in has a confirmed booking that is more than 24 hours away.,,,,,,,Design,,0|i0020m:y,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1.Open My Booking.
+
+2.Go to Upcoming bookings.
+
+3.Select a booking that is more than 24 hours away.
+
+4.Click Cancel Booking.
+
+5.Confirm the cancellation.",,,,,,,,,,,"Appointment time: More than 24 hours away
+Booking status: Confirmed",,,,,,,10/Sep/26 12:17 AM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Great job ya sojood.👏,,To Do,07/Sep/26 8:54 PM
+verify cancellation is not allowed within 24 hours of appointment,HL-30,10850,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 8:58 PM,11/Sep/26 4:29 PM,,,,0,,check that the user can not cancel a booking the appointment is 24 hours or less away.,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 4:28 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 162821.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10773,,,,,,,,,,,,,,{quote}The Cancel Booking button is disabled and the user cannot cancel the booking. A message is shown saying that cancellations are only allowed up to 24 hours before the appointment.{quote},,,,,,,,,,,user is logged in and has a confirmed booking that is 24 hours or less away.,,,,,,,Design,,0|i0020n:,,,,,,,,HL Sprint 1,,,,,,,Fail,,,,,,,,"1.Open My Bookings.
+
+2.Go to Upcoming bookings.
+
+3.Select a booking that is 24 hours or less away.
+
+4.Check the Cancel Booking button.
+
+5.Check the message/tooltip on the disabled button.",,,,,,,,,,,"Appointment Time: 24 hours or less away 
+
+Booking Time:Confirmed ",,,,,,,10/Sep/26 12:28 AM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Great job ya sojood.👏,,To Do,07/Sep/26 8:58 PM
+Booking can be cancelled within 24 hours of the appointment ,HL-147,11832,Bug,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,11/Sep/26 4:53 PM,11/Sep/26 5:12 PM,,,,0,,,,Sogood Assaf,,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,,HL-27,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 5:00 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 162821.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10789,,,,the booking is cancelled successfully even though the appointment is within 24 hours.,,,,,,,,,,"the cancel booking button should be disabled for appointments within 24 hours, and the user should not be able to cancel the booking.",,,,,,,,,,,,,,,,,High,,,0|i0020r:,,,,,,,High,HL Sprint 1,,,,,,,,,,,,,,,"# log in as a patient.
+# open my bookings.
+# go to upcoming booking.
+# select a confirmed booking that is 24 hours or less away.
+# click cancel booking.
+# confirm the cancellation.",,,,,,,,,,,,,,,,,,,,To Do,11/Sep/26 4:53 PM
+verify Upcoming and past/Cancelled booking views,HL-31,10851,TestCase,To Do,HL,HealthCare2,software,Ahmed Sayed,712020:10df32f7-cb91-4cbe-a23f-5f9311a3f28d,,Medium,,,,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,Sogood Assaf,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,07/Sep/26 9:03 PM,11/Sep/26 4:31 PM,,,,0,,check that bookings are displayed in the correct Upcoming pr Past/Cancelled view.,,Nada Ahmed,Sogood Assaf,712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529,712020:9cf6305a-99e2-4d56-bdc6-d49b82546f00,,,,,,,,,,,HL-35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11/Sep/26 4:31 PM;ug:02f0c9d7-9b36-402d-86bb-2f9ea12b327b;Screenshot 2026-09-11 163119.png;https://ahmedsworkspace-45433581.atlassian.net/rest/api/3/attachment/content/10775,,,,,,,,,,,,,,"Upcoming bookings are shown in the Upcoming view, while past and cancelled bookings are shown in the Past / Cancelled view.",,,,,,,,,,,"User is logged in and has upcoming, past, and cancelled bookings.",,,,,,,Design,,0|i0020v:,,,,,,,,HL Sprint 1,,,,,,,Pass,,,,,,,,"1.Open My Bookings.
+
+2.Open the Upcoming view.
+
+3.Check the displayed bookings.
+
+4.Open the Past / Cancelled view.",,,,,,,,,,,"Upcoming booking: Confirmed future appointment
+Past booking: Completed appointment
+Cancelled booking: Cancelled appointment",,,,,,,10/Sep/26 12:30 AM;712020:7bb9b59a-e0d8-4164-86a5-d1e2742ae529;Great job ya sojood.👏,,To Do,07/Sep/26 9:03 PM
